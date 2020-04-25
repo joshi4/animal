@@ -149,15 +149,22 @@ html {
 .numero-animal{
   font-size: 1.875em;
 }
-
+.instrumento-animal{
+  height:100px;
+  width:auto;
+}
 
 /* --------------------------------------------- */
 /* Extra NexusUI */
 
 
-.mom_dial {
+.mom_dial{
   width:38px !important;
   height:38px !important;
+}
+.mom_icon {
+  width: 42px;
+  height: 42px;
 }
 .dial_container {
    content: '';
