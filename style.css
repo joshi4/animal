@@ -129,6 +129,11 @@
 
 
 .mom_dial {
-  width:38px !important;
-  height:38px !important;
+  width:40px !important;
+  height:40px !important;
+  background-color: var(--color-blanco-ui-animal);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: var(--color-blanco-ui-animal);
+  border-width: 10px;
 }
