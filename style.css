@@ -129,11 +129,17 @@
 
 
 .mom_dial {
-  width:40px !important;
-  height:40px !important;
-  background-color: var(--color-blanco-ui-animal);
-  border-radius: 50%;
-  border-style: solid;
-  border-color: var(--color-blanco-ui-animal);
-  border-width: 10px;
+  width:38px !important;
+  height:38px !important;
+}
+.dial_container {
+   content: '';
+   display: inline-block;
+   width: 42px;
+   height: 42px;
+   padding: 2px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: var(--color-blanco-ui-animal);
 }
