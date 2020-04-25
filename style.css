@@ -16,6 +16,33 @@
 }
 
 /* ---------------------------------------------- */
+/* Type */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  color: var(--color-chocolate-animal);
+}
+html {
+  font-size: 14px;
+
+  @media screen and (min-width: 900px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.title{
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+/* ---------------------------------------------- */
 /* Color & opacity */
 
 
