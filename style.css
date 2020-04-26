@@ -144,28 +144,28 @@ html {
 .instrumento-animal{
   height:100px;
 }
-#buhoInst .instrumento-animal{
+#buhoInst.instrumento-animal{
   width:130px;
 }
-#osoInst .instrumento-animal{
+#osoInst.instrumento-animal{
   width:110px;
 }
-#gatoInst .instrumento-animal{
+#gatoInst.instrumento-animal{
   width:130px;
 }
-#sapoInst .instrumento-animal{
+#sapoInst.instrumento-animal{
   width:125px;
 }
-#patoInst .instrumento-animal{
+#patoInst.instrumento-animal{
   width:125px;
 }
-#monoInst .instrumento-animal{
+#monoInst.instrumento-animal{
   width:165px;
 }
-#cerdoInst .instrumento-animal{
+#cerdoInst.instrumento-animal{
   width:165px;
 }
-#loroInst .instrumento-animal{
+#loroInst.instrumento-animal{
   width:125px;
 }
 
