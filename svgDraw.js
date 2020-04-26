@@ -83,17 +83,3 @@ function connectAll() {
     connectElements($("#svg1"), $("#path8"), $("#loroInst"),   $("#inlet8"));
 
 }
-
-$(document).ready(function() {
-    // reset svg each time
-    $("#svg1").attr("height", "0");
-    $("#svg1").attr("width", "0");
-    connectAll();
-});
-
-$(window).resize(function () {
-    // reset svg each time
-    $("#svg1").attr("height", "0");
-    $("#svg1").attr("width", "0");
-    connectAll();
-});
