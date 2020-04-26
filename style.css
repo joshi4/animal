@@ -37,10 +37,10 @@ html {
   }
 }
 .title{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-transform: uppercase;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 /* ---------------------------------------------- */
@@ -154,8 +154,6 @@ html {
   font-size: 1.875em;
 }
 .instrumento-animal{
-  height:100px;
-  width:auto;
 }
 
 /* --------------------------------------------- */
@@ -193,12 +191,15 @@ html {
 	opacity: 1;
 }
 
+#outer {
+  widht:75%;
+}
 #inlet1, #inlet2, #inlet3, #inlet4, #inlet5, #inlet6, #inlet7, #inlet8 {
 	width:30px;
 	height: 10px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 	margin-left: 15px;
-  margin-top: 100px;
+  margin-top: 50px;
 	background-color: var(--color-destaque-animal);
 }
