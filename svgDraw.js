@@ -74,6 +74,13 @@ function connectElements(svg, path, startElem, endElem) {
 function connectAll() {
     // connect all the paths you want!
     connectElements($("#svg1"), $("#path1"), $("#buhoInst"),   $("#inlet1"));
+    connectElements($("#svg1"), $("#path2"), $("#osoInst"),   $("#inlet2"));
+    connectElements($("#svg1"), $("#path3"), $("#gatoInst"),   $("#inlet3"));
+    connectElements($("#svg1"), $("#path4"), $("#sapoInst"),   $("#inlet4"));
+    connectElements($("#svg1"), $("#path5"), $("#patoInst"),   $("#inlet5"));
+    connectElements($("#svg1"), $("#path6"), $("#monoInst"),   $("#inlet6"));
+    connectElements($("#svg1"), $("#path7"), $("#cerdoInst"),   $("#inlet7"));
+    connectElements($("#svg1"), $("#path8"), $("#loroInst"),   $("#inlet8"));
 
 }
 
