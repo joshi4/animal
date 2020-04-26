@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <title>Animalv0</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="/GUI/style.css">
+  <script src="/tone/Tone.js"></script>
+  <script type="module">
+    import * as Tone from "/tone/Tone.js";
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <div id="Header" class="row">
+      <div class="col-md-12 d-flex flex-row justify-content-between">
+        <div id="Animal_logo">Animal</div>
+        <div id="MoM_logo">[MoM]</div>
+      </div>
+    </div>
+
+    <!-- header end -->
+
+    <!-- MAIN-UP -->
+
+    <div id="Main-up" class="row">
+
+      <!-- PATHS SVG (#svgContainer) -->
+
+      <div id="svgContainer" style="margin: 50px 50px;">
+        <svg id="svg1" width="0" height="0">
+          <path id="path1" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path2" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path3" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path4" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path5" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path6" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path7" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+          <path id="path8" d="M0 0" stroke="#6D777E" fill="none" stroke-width="10px" ; />
+        </svg>
+      </div>
+
+      <!-- paths svg end -->
+
+      <!-- INSTRUMENTOS -->
+
+      <div id="instrumentos" class="col-12 d-flex flex-lg-row justify-content-between color-fondo-1-animal text-white">
+
+        <div id="buhoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 gris-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/buho.svg" class="mom-icon">
+              Buho
+            </object>
+            <div class="title">Buh</div>
+            <div class="sub_title">Base drum</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins1" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="osoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 chocolate-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/oso.svg" class="mom-icon">
+              Oso
+            </object>
+            <div class="title">Os</div>
+            <div class="sub_title">Snare</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins2" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="gatoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 gris-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/buho.svg" class="mom-icon">
+              Buho
+            </object>
+            <div class="title">Gat</div>
+            <div class="sub_title">Hi hat</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins3" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="sapoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 verde-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/sapo.svg" class="mom-icon">
+              Sapo
+            </object>
+            <div class="title">Sap</div>
+            <div class="sub_title">Ride</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins4" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="patoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 mostaza-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/pato.svg" class="mom-icon">
+              Pato
+            </object>
+            <div class="title">Pat</div>
+            <div class="sub_title">Clave</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins5" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="monoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 marron-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/mono.svg" class="mom-icon">
+              Mono
+            </object>
+            <div class="title">Mono</div>
+            <div class="sub_title">Bass</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins6" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="cerdoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 rosa-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/cerdo.svg" class="mom-icon">
+              Cerdo
+            </object>
+            <div class="title">Cerd</div>
+            <div class="sub_title">Scratch</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins7" class="mom_dial"></div>
+          </div>
+        </div>
+
+        <div id="loroInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 verde-animal">
+          <div>
+            <object type="image/svg+xml" data="/GUI/svg/iconos/loro.svg" class="mom-icon">
+              Loro
+            </object>
+            <div class="title">Lor</div>
+            <div class="sub_title">Sampler</div>
+          </div>
+          <div class="dial_container mb-1 ml-1">
+            <div id="dial-ins8" class="mom_dial"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- instrumentos end -->
+
+      <div id="cables" class="col-md-12 pr-5 d-flex">
+        <div id="outer" class="w-100 d-flex flex-row justify-content-end">
+          <div id="inlet1"></div>
+          <div id="inlet2"></div>
+          <div id="inlet3"></div>
+          <div id="inlet4"></div>
+          <div id="inlet5"></div>
+          <div id="inlet6"></div>
+          <div id="inlet7"></div>
+          <div id="inlet8"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main-up end -->
+
+    <!-- MAIN-DOWN -->
+
+    <div id="Main-down" class="row">
+      <div id="izq" class="col-2">
+        <div class="row pr-1">
+
+          <!-- CHAT -->
+          <div id="chat-animal" class="col-12 mb-2 corners1 figura-1-animal">Chat</div>
+
+          <!-- chat end -->
+
+          <!-- CONTROLES -->
+
+          <div id="controles" class="col-12 corners1 fondo-1-animal">
+            <div id="row" class="m-2 corners1 blanco-ui-animal">
+              <div class="col-12 d-flex flex-row border-bottom">
+                <div class="border-right">+/-</div>
+                <div><span class="numero-animal">120</span>BPM</div>
+              </div>
+              <div class="col-12 d-flex flex-row border-bottom">
+                <div class="border-right">+/-</div>
+                <div><span class="numero-animal">55</span>Swing</div>
+              </div>
+              <div class="col-12 d-flex flex-row">
+                <div class="border-right">Invitar</div>
+                <div>Mute</div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- controles end -->
+
+        </div>
+      </div>
+
+      <div id="der" class="col-10">
+        <div class="row">
+
+          <!-- CHANNEL CONTROL (#ch_control) -->
+
+          <div id="ch_control" class="col p-4 corners-l fondo-1-animal">
+            <div class="row">
+
+              <div id="ch1" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/buho.svg" class="buho-icon">
+                      Buho
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch1" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch2" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/oso.svg" class="oso-icon">
+                      Oso
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch2" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch3" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/gato.svg" class="gato-icon">
+                      Gato
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch3" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch4" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/sapo.svg" class="sapo-icon">
+                      Sapo
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch4" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch5" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/pato.svg" class="pato-icon">
+                      Pato
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch5" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch6" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/mono.svg" class="mono-icon">
+                      Mono
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch6" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch7" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/cerdo.svg" class="cerdo-icon">
+                      Cerdo
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch7" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="ch8" class="col-12">
+                <div class="row">
+                  <div id="icono" class="col-6">
+                    <object type="image/svg+xml" data="/GUI/svg/iconos/loro.svg" class="loro-icon">
+                      Loro
+                    </object>
+                  </div>
+                  <div id="volumen" class="col-6">
+                    <div id="dial-ch8" class="mom_dial"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- channel control end -->
+
+          <!-- SECUENCIADOR (#secuenciador) -->
+
+          <div id="secuenciador" class="col p-4 corners-r fondo-1-animal">
+            <div id="seq-animal"></div>
+          </div>
+
+          <!-- secuenciador end -->
+
+          <!-- REGISTRO COMPARTIR (#registro-compartir) -->
+
+          <div id="registro-compartir"
+            class="col-md-1 p-4 d-flex justify-content-between flex-column fondo-1-animal corners1">
+            <div id="rec-sesion">
+              <div class="rec-icon btn-animal"></div>
+              Rec
+            </div>
+            <div id="combo-botones">
+              <div id="download-rec">
+                <div class="mb-2 download-icon btn-animal">Download</div>
+              </div>
+              <div id="share-rec">
+                <div class="mb-2 share-icon btn-animal">Compartir</div>
+              </div>
+              <div id="email-rec">
+                <div class="mb-2 email-icon btn-animal">Email</div>
+              </div>
+            </div>
+            <div id="help" class="align-self-baseline">
+              <div class="help-icon btn-animal">?</div>
+            </div>
+          </div>
+
+          <!-- registro compartir end -->
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- main-down end -->
+
+
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.3.3/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/nexusui@2.0.13/dist/NexusUI.js'></script>
+
+    <script src="/GUI/scriptGUI.js"></script>
+    <script src="/GUI/svgDraw.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+
+    <script>
+      //
+      //NET
+      $(function () {
+        var socket = io();
+
+        sequencer.on('change', function (v) {
+          var miStep = [v.row, v.column, v.state]
+          console.log(miStep);
+          socket.emit('clickStep', miStep);
+        });
+
+
+        /*  $('form').submit(function(e) {
+            e.preventDefault(); // prevents page reloading
+            //      socket.emit('chat message', $('#m').val());
+            //    $('#messages').append($('<li>').text($('#m').val()));
+            //  $('#m').val('');
+            return false;
+          });*/
+        socket.on('clickStep', function (miStep) {
+          console.log("llego " + miStep);
+          sequencer.matrix.pattern[miStep[0]][miStep[1]] = miStep[2];
+        });
+
+      });
+    </script>
+    <script type="text/javascript">
+      //NEXUs
+
+      var sequencer = new Nexus.Sequencer('#seq-animal', {
+        'size': [700, 356],
+        'mode': 'toggle',
+        'rows': 8,
+        'columns': 16
+      });
+
+      sequencer.on('change', function (v) {
+        // console.log(v);
+      });
+
+      sequencer.on('step', function (v) {
+        console.log(v);
+      });
+      // sequencer.init();
+      ////////
+
+      // TONEJS
+      var sonidos = new Tone.Players({
+        "Buho": "/audios/SA-001.mp3",
+        "Oso": "/audios/SA-002.mp3",
+        "Gato": "/audios/SA-003.mp3",
+        "Sapo": "/audios/SA-004.mp3",
+        "Pato": "/audios/SA-005.mp3",
+        "Mono": "/audios/SA-006.mp3",
+        "Cerdo": "/audios/SA-007.mp3",
+        "Loro": "/audios/SA-008.mp3",
+      }, {
+        "volume": -1,
+        "fadeOut": "16n",
+      }).toMaster();
+
+      //the notes
+      var scaleNotes = ["Buho", "Oso", "Gato", "Sapo", "Pato", "Mono", "Cerdo", "Loro"];
+      var stepNumber = 0;
+      var loop = 0;
+      var matrix = sequencer.matrix.pattern;
+
+      $("#rec-sesion").click(function () {
+
+        if (loop === 0) {
+          loop = new Tone.Sequence(function (time) {
+
+            for (var i = 0; i < 8; i++) {
+
+              if (matrix[i][stepNumber]) {
+                sonidos.get(scaleNotes[i]).start(time, 0, "16n", 0, 1);
+              }
+            }
+            stepNumber++;
+            stepNumber = stepNumber % 16;
+          }, scaleNotes, "16n");
+          loop.start();
+          loop.loop = true;
+        }
+        if (Tone.Transport.state == "started") {
+          Tone.Transport.stop();
+        } else {
+
+          Tone.Transport.start();
+        }
+      });
+
+
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // reset svg each time
+        $("#svg1").attr("height", "0");
+        $("#svg1").attr("width", "0");
+        connectAll();
+      });
+
+      $(window).resize(function () {
+        // reset svg each time
+        $("#svg1").attr("height", "0");
+        $("#svg1").attr("width", "0");
+        connectAll();
+      });
+    </script>
+
+</body>
+
+</html>

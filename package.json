@@ -1,0 +1,15 @@
+{
+    "name": "animal-prototipo3",
+    "version": "0.0.1",
+    "description": "a ver si funcina el sequencer",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@tonejs/ui": "0.0.9",
+        "express": "^4.17.1",
+        "nexusui": "^2.0.16",
+        "socket.io": "^2.3.0",
+        "tone": "^13.8.25"
+    }
+}
