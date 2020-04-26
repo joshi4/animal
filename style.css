@@ -86,6 +86,9 @@ html {
 .rojo-ui-animal {
   background-color: var(--color-rojo-ui-animal);
 }
+.negro-ui-animal{
+  background-color: var(--color-negro-ui-animal);
+}
 
 
 .opacity-0 {
@@ -189,15 +192,13 @@ html {
 
 
 
-#outer{
-	width: 80%;
-}
 
-#inlet1{
+#inlet1, #inlet2, #inlet3, #inlet4, #inlet5, #inlet6, #inlet7, #inlet8 {
 	width:30px;
 	height: 10px;
-	margin-left: 30%;
-	padding:4em 3em;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+	margin-left: 15px;
   margin-top: 100px;
-	background-color: var(--color-negro-ui-animal);
+	background-color: var(--color-destaque-animal);
 }
