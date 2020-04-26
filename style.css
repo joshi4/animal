@@ -13,6 +13,7 @@
 --color-verde-ui-animal: rgba(94,194,10,1);
 --color-blanco-ui-animal: rgba(255,255,255,1);
 --color-rojo-ui-animal: rgba(229,76,76,1);
+--color-negro-ui-animal: rgba(30,30,0,1);
 }
 
 /* ---------------------------------------------- */
@@ -159,21 +160,44 @@ html {
 
 
 .mom_dial{
-  width:38px !important;
-  height:38px !important;
+  width:40px !important;
+  height:40px !important;
 }
 .mom_icon {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
 }
 .dial_container {
    content: '';
    display: inline-block;
-   width: 42px;
-   height: 42px;
+   width: 44px;
+   height: 44px;
    padding: 2px;
    -moz-border-radius: 50%;
    -webkit-border-radius: 50%;
    border-radius: 50%;
    background-color: var(--color-blanco-ui-animal);
+}
+
+
+
+#svgContainer {
+	z-index: -10;
+	position:absolute;
+	opacity: 1;
+}
+
+
+
+#outer{
+	width: 80%;
+}
+
+#inlet1{
+	width:30px;
+	height: 10px;
+	margin-left: 30%;
+	padding:4em 3em;
+  margin-top: 100px;
+	background-color: var(--color-negro-ui-animal);
 }

@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
   <div class="container">
 
     <!-- HEADER -->
@@ -30,7 +30,56 @@
     <!-- INSTRUMENTOS -->
 
       <div id="instrumentos" class="col-md-12 d-flex flex-row justify-content-between color-fondo-1-animal text-white">
-        <div class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 gris-animal">
+
+
+                <div id="svgContainer" style="margin: 50px 50px;">
+                    <svg id="svg1" width="0" height="0" >
+                        <path
+                            id="path1"
+                            d="M0 0"
+                            stroke="#000"
+                            fill="none"
+                            stroke-width="12px";/>
+                         <path
+                            id="path2"
+                            d="M0 0"
+                            stroke="#000"
+                            fill="none"
+                            stroke-width="12px";/>
+                         <path
+                            id="path3"
+                            d="M0 0"
+                            stroke-width="8px"
+                            style="stroke:#000; fill:none;"/>
+                          <path
+                            id="path4"
+                            d="M0 0"
+                            stroke-width="12px"
+                            style="stroke:#000; fill:none;  stroke-width: 12px;" />
+                          <path
+                            id="path5"
+                            d="M0 0"
+                            stroke-width="10px"
+                            style="stroke:#000; fill:none;"/>
+                          <path
+                            id="path6"
+                            d="M0 0"
+                            stroke-width="10px"
+                            style="stroke:#000; fill:none;"/>
+                          <path
+                            id="path7"
+                            d="M0 0"
+                            stroke-width="10px"
+                            style="stroke:#000; fill:none;"/>
+                          <path
+                            id="path8"
+                            d="M0 0"
+                            stroke-width="10px"
+                            style="stroke:#000; fill:none;"/>
+                    </svg>
+                </div>
+
+        <div id="buhoInst" class="instrumento-animal p-2 d-flex flex-row align-items-end corners1 gris-animal">
           <div>
             <object type="image/svg+xml" data="svg/iconos/buho.svg" class="mom-icon">
               Buho
@@ -42,7 +91,7 @@
             <div id="dial-ins1" class="mom_dial"></div>
           </div>
         </div>
-        <div class="instrumento-animal p-4  corners1 chocolate-animal">
+        <div id="osoInst" class="instrumento-animal p-4  corners1 chocolate-animal">
           <div>Os</div>
           <object type="image/svg+xml" data="svg/iconos/oso.svg" class="oso-icon">
             Oso
@@ -96,7 +145,11 @@
     <!-- instrumentos end -->
 
       <div id="cables" class=col-md-12>
-        Cables
+        <div id="outer">
+          <div id="inlet1"></div>
+        </div>
+
+
       </div>
     </div>
 
@@ -290,10 +343,15 @@
 </div>
 
     <!-- main-down end -->
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.3.3/umd/popper.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/nexusui@2.0.13/dist/NexusUI.js'></script><script  src="./script.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/nexusui@2.0.13/dist/NexusUI.js'></script>
+
+<script  src="./script.js"></script>
+<script src="svgDraw.js"></script>
 
 </body>
 </html>
