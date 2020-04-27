@@ -31,7 +31,6 @@ html {
   @media screen and (min-width: 900px) {
     font-size: 15px;
   }
-
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
@@ -193,15 +192,15 @@ html {
 /* --------------------------------------------- */
 /* Buttons & icons */
 
-.btn-animal{
+.animal-btn{
   width:38px;
   height:38px;
   border-radius: 50px;
   background-color: var(--color-figura-1-animal)
 }
-.mom_icon {
-  width: 40px;
-  height: 40px;
+.animal-icon {
+  width: 44px;
+  height: 44px;
 }
 .rec-icon{}
 .download-btn{}
