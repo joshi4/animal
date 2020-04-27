@@ -396,9 +396,9 @@
         var socket = io();
 
         sequencer.on('change', function (v) {
-          var miStep = [v.row, v.column, v.state]
-          console.log(miStep);
-          socket.emit('clickStep', miStep);
+         // var miStep = [v.row, v.column, v.state]
+          console.log(v);
+          socket.emit('clickStep', "ala");
         });
 
 
@@ -411,7 +411,7 @@
           });*/
         socket.on('clickStep', function (miStep) {
           console.log("llego " + miStep);
-          sequencer.matrix.pattern[miStep[0]][miStep[1]] = miStep[2];
+          sequencer.matrix.pattern[v.column][v.row] = v.state;
         });
 
       });
