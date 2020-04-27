@@ -193,8 +193,8 @@ html {
 /* Buttons & icons */
 
 .animal-btn{
-  width:38px;
-  height:38px;
+  width:44px;
+  height:44px;
   border-radius: 50px;
   background-color: var(--color-figura-1-animal)
 }
